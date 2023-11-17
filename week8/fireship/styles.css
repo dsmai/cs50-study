@@ -1,0 +1,27 @@
+*
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    font-size: 2rem;
+    background-color: pink;
+    /* Block is the default display of block element */
+    /* Block level element cover the entire width of the viewport */
+    /* Box Model */
+    width: 300px;
+    height: 100px;
+    /* padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px; */
+    padding: 32px 16px 20px 14px;
+    border: 5px outset white;
+    margin: 0;
+}

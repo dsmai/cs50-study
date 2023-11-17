@@ -1,0 +1,82 @@
+/* BASE STYLES */
+:root {
+    --clr-dark: black;
+    --clr-light: white;
+    --clr-accent: red;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 5px solid var(--clr-dark);
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: palevioletred;
+    padding: 1em;
+    font-weight: 700;
+    color: var(--clr-light);
+    text-align: center;
+    border: 10px solid yellow;
+    border-radius: 10px;
+}
+  
+.item:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
+/* END OF BASE STYLES */
+
+.container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    /* for alligning items on the main axis */
+    /* justify-content: space-between;  */
+    /* for alligning items on the cross axis */
+    /* align-items: center;  */
+    /* flex-wrap: wrap; */
+
+    /* Allign content only available when flex-wrap is wrap */
+    /* align-content: flex-end; */
+
+    /* gap: 1em; */
+}
+
+.item-3 {
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 300px; */
+    /* flex: 1; */
+    align-self: center;
+    /* Make it appear first */
+    order: -1;
+}
+
+.item-1 {
+    /* Make it appear last */
+    order: 1;
+}
